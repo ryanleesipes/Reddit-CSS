@@ -1,6 +1,6 @@
-Reddit-CSS
+Pop-Reddit
 ==========
 
-CSS theme for /r/elementaryOS using elements from https://github.com/elementary/web-styles
+CSS theme for /r/popos based on the [elementaryOS Reddit Stylesheet](https://github.com/elementary/Reddit-CSS)
 
-A test reddit is set up at http://www.reddit.com/r/elementaryTesting
+Check it out on the [Pop\!\_OS subreddit](https://reddit.com/r/popos)!
