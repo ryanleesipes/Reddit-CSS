@@ -1,16 +1,16 @@
 /* Site wide styling */
 
 Body * {
-    font-family: "Open Sans", "Droid Sans", Helvetica, Arial, Sans-serif !important;
+    font-family: "Fira Sans", "Droid Sans", Helvetica, Arial, Sans-serif !important;
 }
 
 a {
-    color: #08c;
+    color: #faa41a;
     text-decoration: none;
 }
 
 a:hover {
-    color: #80aeff;
+    color: #f15d22;
     transition: color 200ms ease-out;
 }
 
@@ -21,7 +21,7 @@ s,strike,del {
 code, pre, kbd {
     border: 1px solid lightgrey;
     border-radius: 3px !important;
-    font-family: "Roboto Mono", monospace !important;
+    font-family: "Fira Sans", monospace !important;
     font-size: 90%;
     padding: 2px 4px;
     text-align: justify;
@@ -30,7 +30,7 @@ code, pre, kbd {
 
 pre:not(.img-url) {
     border: none !important;
-    background-color: #002b36 !important;
+    background-color: #f2f2f2 !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     color: #839496;
     display: block;
@@ -149,7 +149,7 @@ button:active, .sidebox.submit a:active {
 
 #header {
     border: none;
-    background-color: #fff;
+    background-color: #f2f2f2;
     box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
     position: fixed;
     height: 51px;
@@ -184,7 +184,7 @@ button:active, .sidebox.submit a:active {
     border-radius: 3px;
     padding-top: 6px;
     padding-bottom: 6px;
-    background-color: #FFF9C4;
+    background-color: #F2F2F2;
 }
 
 .link.thing.stickied a.title {
@@ -291,7 +291,7 @@ button:active, .sidebox.submit a:active {
     content: "r/";
     color: #aaa;
     display: inline-block;
-    background-image: url(%%logomark%%);
+    background-image: url(%%logo%%);
     background-size: 32px;
     background-position-y: 10px;
     background-repeat: no-repeat;
@@ -359,8 +359,8 @@ button:active, .sidebox.submit a:active {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #47A8E9;
-    color: #fff;
+    background-color: #48b9c7;
+    color: #f2f2f2;
     text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 }
 
@@ -375,7 +375,7 @@ button:active, .sidebox.submit a:active {
     border: none;
 }
 
-#searchexpando, 
+#searchexpando,
 .linkinfo {
     border-radius: 2.5px;
 }
@@ -389,7 +389,7 @@ button:active, .sidebox.submit a:active {
     font-size: 0;
     width: 100%;
     height: 50px;
-    background: url(%%eos%%) no-repeat center;
+    background: url(%%pop%%) no-repeat center;
     background-size: contain;
 }
 
@@ -421,16 +421,16 @@ button:active, .sidebox.submit a:active {
 
 .fancy-toggle-button .add, .fancy-toggle-button .remove, .RESshortcutside, .RESDashboardToggle {
     text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-    color: #fff;
+    color: #f2f2f2;
     font-weight: normal;
 }
 
 .fancy-toggle-button .remove {
-    background-color: #DA4D45;
+    background-color: #f15d22;
 }
 
 .fancy-toggle-button .add {
-    background-color: #47A8E9;
+    background-color: #73c48f;
 }
 
 /* Menus and Popovers */
@@ -557,7 +557,7 @@ ul.tabmenu.formtab li:last-child  a {
     border: none;
 }
 
-.submit-page .submit.content #reddit-field.roundfield, .submit-page .submit.content .formtabs-content .spacer:last-child .title, .submit-page .submit.content .roundfield.info-notice::before, .submit-page .submit.content .submit_text.roundfield.enabled > h1 { 
+.submit-page .submit.content #reddit-field.roundfield, .submit-page .submit.content .formtabs-content .spacer:last-child .title, .submit-page .submit.content .roundfield.info-notice::before, .submit-page .submit.content .submit_text.roundfield.enabled > h1 {
     display: none;
 }
 .submit-page .submit.content .formtabs-content .spacer:last-child .roundfield-content, .submit-page .submit.content .roundfield.info-notice {
@@ -683,9 +683,9 @@ ul.tabmenu.formtab li:last-child  a {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    color: #fff;
+    color: #f2f2f2;
     font-size: 16px;
-    font-family: "Open Sans", "Droid Sans", Helvetica, Arial, Sans-serif
+    font-family: "Fira Sans", "Droid Sans", Helvetica, Arial, Sans-serif
 }
 
 .link.linkflair-discussion .linkflairlabel {
@@ -695,21 +695,21 @@ ul.tabmenu.formtab li:last-child  a {
 /* "No Participation"-Mode, aka "Read Only"-Mode
  * by /u/KortoloB
  * /r/NoParticipation
- * 
+ *
  * Link people to np.reddit.com/r/YourSubreddit to show them a read-only version.
  * Subscribers will see the full page, only non-subscribers will see the read-only version.
  * This is of course by no means fool-proof, but it should work for the average user.
  *  */
 
 body:lang(np):not(.subscriber) .arrow
-{ 
+{
     visibility: hidden !important;
 }
 
 body:lang(np):not(.subscriber) .usertext-edit,
 body:lang(np):not(.subscriber) .sidebox.submit,
 body:lang(np):not(.subscriber) .commentingAs,
-body:lang(np):not(.subscriber) .markdownEditor, 
+body:lang(np):not(.subscriber) .markdownEditor,
 body:lang(np):not(.subscriber) a[onclick*="return reply(this)"],
 body:lang(np):not(.subscriber) .subButtons,
 body:lang(np):not(.subscriber) .helplink,
